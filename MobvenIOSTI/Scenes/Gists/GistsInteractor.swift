@@ -38,6 +38,9 @@ class GistsInteractor: GistsBusinessLogic, GistsDataStore {
                     self?.gists = result
                     self?.presenter?.presentGists(response: Gists.Fetch.Response(gists: result))
                 } catch {
+                    print(error.localizedDescription)
+//                  The data couldn’t be read because it isn’t in the correct format.
+
                     print("Error occured")
                 }
                 
