@@ -68,6 +68,13 @@ final class GistDetailViewController: UIViewController {
     }
     
     @IBAction func selectURL() {
+        if let url = URL(string: urlButton.title(for: .normal)!) {
+            let config = SFSafariViewController.Configuration()
+            config.entersReaderIfAvailable = false
+
+            let vc = SFSafariViewController(url: url, configuration: config)
+            present(vc, animated: true)
+        }
         // FIXME: route to gist url showing SFSafariViewController.
     }
     
