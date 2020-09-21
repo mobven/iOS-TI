@@ -49,6 +49,7 @@ final class GistsViewController: UIViewController {
         presenter.viewController = viewController
         router.viewController = viewController
         router.dataStore = interactor
+       
     }
     
     override func viewDidLoad() {
@@ -58,8 +59,14 @@ final class GistsViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         VersionConfig.shared?.show()
+
     }
     
+    override func viewDidLayoutSubviews() {
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 600
+    
+    }
 }
 
 extension GistsViewController: GistsDisplayLogic {
@@ -97,9 +104,9 @@ extension GistsViewController: UITableViewDataSource, UITableViewDelegate {
         )
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        100
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        100
+//    }
     
 }
 
