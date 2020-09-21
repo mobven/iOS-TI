@@ -43,4 +43,10 @@ final class VersionConfig {
         UIApplication.shared.delegate?.window??.bringSubviewToFront(self.versionLabel)
     }
     
+    func showForSafari() -> UILabel{
+        return self.versionLabel
+    }
+    
 }
+
+

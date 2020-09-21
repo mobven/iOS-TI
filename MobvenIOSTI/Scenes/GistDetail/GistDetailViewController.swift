@@ -107,3 +107,10 @@ extension GistDetailViewController: GistDetailDisplayLogic {
 protocol GistDetailFavoriteDelegate {
     func gistDetailFavoriteUpdatedGist(_ gist: Gist)
 }
+
+
+extension SFSafariViewController {
+    public override func viewDidAppear(_ animated: Bool) {
+        VersionConfig.shared?.show()
+    }
+}
