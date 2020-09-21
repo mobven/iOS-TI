@@ -29,7 +29,11 @@ final class GistDetailPresenter: GistDetailPresentationLogic {
                 description: "Description\n\(response.gist.description ?? "")",
                 comments: "Comments:\n\(comments)")
         )
+
+
     }
+    
+    
     
     func presentUpdateFavorite(response: GistDetail.UpdateFavorite.Response) {
         var viewModel: GistDetail.UpdateFavorite.ViewModel
