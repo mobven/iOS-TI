@@ -88,6 +88,7 @@ extension GistsViewController: UITableViewDataSource, UITableViewDelegate {
             fatalError("Could not find cell")
         }
         cell.set(gist: gists[indexPath.row])
+        cell.updateConstraintsIfNeeded()
         return cell
     }
     
