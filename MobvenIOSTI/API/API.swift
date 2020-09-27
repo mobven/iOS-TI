@@ -12,9 +12,9 @@ import Alamofire
 enum API: URLRequestConvertible {
     
     case gists
-    
-    static let BASE_URL = "https://api.github.com/gists/public"
-    
+
+	static let BASE_URL = Environment.baseURL
+
     var method: HTTPMethod {
         switch self {
         case .gists:

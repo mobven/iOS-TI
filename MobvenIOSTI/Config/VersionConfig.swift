@@ -40,7 +40,9 @@ final class VersionConfig {
     
     /// Brings already created version label to the front of the current window.
     func show() {
+		#if DEVELOPMENT
         UIApplication.shared.delegate?.window??.bringSubviewToFront(self.versionLabel)
+		#endif
     }
     
 }
