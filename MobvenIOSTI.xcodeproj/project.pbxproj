@@ -60,6 +60,7 @@
 		6581F12F250A0E4B008CBAFA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		6DA088AB2517E905003C9A20 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		6DA088B82517FD6A003C9A20 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		735B2CFF2524E7C4007514B4 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 		6581F0DD2508CB55008CBAFA = {
 			isa = PBXGroup;
 			children = (
+				735B2CFF2524E7C4007514B4 /* Config.xcconfig */,
 				6581F0E82508CB55008CBAFA /* MobvenIOSTI */,
 				6581F0E72508CB55008CBAFA /* Products */,
 			);
@@ -410,6 +412,7 @@
 		};
 		6581F0FB2508CB5A008CBAFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 735B2CFF2524E7C4007514B4 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -430,6 +433,7 @@
 		};
 		6581F0FC2508CB5A008CBAFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 735B2CFF2524E7C4007514B4 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
