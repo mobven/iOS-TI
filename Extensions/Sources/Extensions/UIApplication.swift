@@ -34,7 +34,8 @@ public extension UIApplication {
         }
         return controller
     }
-    
+
+    @available(iOS 10.0, *)
     func routeToSettings(completionHandler: ((Bool) -> Void)? = nil) {
         guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
             return

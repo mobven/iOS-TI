@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Extensions
 
 protocol GistDetailPresentationLogic: class {
     func presentGistDetail(response: GistDetail.FetchDetail.Response)
