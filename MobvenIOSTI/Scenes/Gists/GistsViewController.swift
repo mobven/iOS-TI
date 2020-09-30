@@ -56,10 +56,6 @@ final class GistsViewController: UIViewController {
         interactor?.fetchGists(request: Gists.Fetch.Request())
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        VersionConfig.shared?.show()
-    }
-    
 }
 
 extension GistsViewController: GistsDisplayLogic {
