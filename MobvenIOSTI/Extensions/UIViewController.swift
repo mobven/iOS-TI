@@ -13,7 +13,9 @@ extension UIViewController {
     @objc func viewDidAppearOverride(_ animated: Bool) {
         self.viewDidAppearOverride(animated)
 
-        VersionConfig.shared?.show()
+        #if DEVELOPMENT
+            VersionConfig.shared?.show()
+        #endif
 
     }
 

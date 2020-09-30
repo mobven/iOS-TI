@@ -61,8 +61,9 @@
 		6581F12F250A0E4B008CBAFA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		6DA088AB2517E905003C9A20 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		6DA088B82517FD6A003C9A20 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		735B2CFF2524E7C4007514B4 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		735B2CFF2524E7C4007514B4 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		735B2D022524F63C007514B4 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		735B2D0E25250A22007514B4 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +90,8 @@
 		6581F0DD2508CB55008CBAFA = {
 			isa = PBXGroup;
 			children = (
-				735B2CFF2524E7C4007514B4 /* Config.xcconfig */,
+				735B2D0E25250A22007514B4 /* Development.xcconfig */,
+				735B2CFF2524E7C4007514B4 /* Production.xcconfig */,
 				6581F0E82508CB55008CBAFA /* MobvenIOSTI */,
 				6581F0E72508CB55008CBAFA /* Products */,
 			);
@@ -354,6 +356,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_SWIFT_FLAGS[arch=*]" = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -416,7 +419,7 @@
 		};
 		6581F0FB2508CB5A008CBAFA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 735B2CFF2524E7C4007514B4 /* Config.xcconfig */;
+			baseConfigurationReference = 735B2D0E25250A22007514B4 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -428,6 +431,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_SWIFT_FLAGS = "-D DEVELOPMENT";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobven.ios.tiapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -437,7 +441,7 @@
 		};
 		6581F0FC2508CB5A008CBAFA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 735B2CFF2524E7C4007514B4 /* Config.xcconfig */;
+			baseConfigurationReference = 735B2CFF2524E7C4007514B4 /* Production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +453,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_SWIFT_FLAGS = "-D DEVELOPMENT";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobven.ios.tiapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
