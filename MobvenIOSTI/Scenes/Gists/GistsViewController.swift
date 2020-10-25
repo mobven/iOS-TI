@@ -67,6 +67,7 @@ extension GistsViewController: GistsDisplayLogic {
     func displayGists(viewModel: Gists.Fetch.ViewModel) {
         self.gists = viewModel.gists
         tableView.reloadData()
+        tableView.rowHeight = UITableView.automaticDimension
     }
     
     func displayShowDetail(viewModel: Gists.ShowDetail.ViewModel) {
@@ -97,9 +98,9 @@ extension GistsViewController: UITableViewDataSource, UITableViewDelegate {
         )
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        100
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        100
+//    }
     
 }
 
