@@ -13,7 +13,11 @@ enum API: URLRequestConvertible {
     
     case gists
     
-    static let BASE_URL = "https://api.github.com/gists/public"
+    static var baseUrl: String? {
+        return Bundle.main.object(forInfoDictionaryKey: "BASE_URL") as? String
+    }
+    
+    static let BASE_URL = baseUrl // "https://api.github.com/gists/public"
     
     var method: HTTPMethod {
         switch self {
@@ -23,7 +27,7 @@ enum API: URLRequestConvertible {
     }
     
     func asURLRequest() throws -> URLRequest {
-        let url = try API.BASE_URL.asURL()
+        let url = try API.BASE_URL!.asURL()
         
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method.rawValue

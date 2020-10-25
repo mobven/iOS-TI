@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,11 +31,39 @@
 		6DA088AC2517E905003C9A20 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088AB2517E905003C9A20 /* UIApplication.swift */; };
 		6DA088B92517FD6A003C9A20 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088B82517FD6A003C9A20 /* String.swift */; };
 		D503EEDB290CCA0C5873D305 /* Pods_MobvenIOSTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053D221016495D7969834ACE /* Pods_MobvenIOSTI.framework */; };
+		E26A491D2545819500CE450D /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E26A491C2545819500CE450D /* Debug.xcconfig */; };
+		E26A4920254581BF00CE450D /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E26A491F254581BF00CE450D /* Release.xcconfig */; };
+		E26A4930254582E400CE450D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088B82517FD6A003C9A20 /* String.swift */; };
+		E26A4931254582E400CE450D /* GistsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F1062508CBBB008CBAFA /* GistsWorker.swift */; };
+		E26A4932254582E400CE450D /* GistsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F1072508CBBB008CBAFA /* GistsRouter.swift */; };
+		E26A4933254582E400CE450D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F12F250A0E4B008CBAFA /* API.swift */; };
+		E26A4934254582E400CE450D /* GistDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F1122508CBDA008CBAFA /* GistDetailInteractor.swift */; };
+		E26A4935254582E400CE450D /* GistDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F1142508CBDA008CBAFA /* GistDetailWorker.swift */; };
+		E26A4936254582E400CE450D /* VersionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F123250913B9008CBAFA /* VersionConfig.swift */; };
+		E26A4937254582E400CE450D /* GistDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F1112508CBDA008CBAFA /* GistDetailPresenter.swift */; };
+		E26A4938254582E400CE450D /* GistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F1022508CBBB008CBAFA /* GistsViewController.swift */; };
+		E26A4939254582E400CE450D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088AB2517E905003C9A20 /* UIApplication.swift */; };
+		E26A493A254582E400CE450D /* GistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F1212509107B008CBAFA /* GistTableViewCell.swift */; };
+		E26A493B254582E400CE450D /* GistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F1102508CBDA008CBAFA /* GistDetailViewController.swift */; };
+		E26A493C254582E400CE450D /* GistsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F1052508CBBB008CBAFA /* GistsModels.swift */; };
+		E26A493D254582E400CE450D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F0E92508CB55008CBAFA /* AppDelegate.swift */; };
+		E26A493E254582E400CE450D /* GistsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F1042508CBBB008CBAFA /* GistsInteractor.swift */; };
+		E26A493F254582E400CE450D /* Gist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F12525091422008CBAFA /* Gist.swift */; };
+		E26A4940254582E400CE450D /* GistDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F1152508CBDA008CBAFA /* GistDetailRouter.swift */; };
+		E26A4941254582E400CE450D /* GistDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F1132508CBDA008CBAFA /* GistDetailModels.swift */; };
+		E26A4942254582E400CE450D /* GistsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F1032508CBBB008CBAFA /* GistsPresenter.swift */; };
+		E26A4944254582E400CE450D /* Pods_MobvenIOSTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053D221016495D7969834ACE /* Pods_MobvenIOSTI.framework */; };
+		E26A4946254582E400CE450D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6581F0F42508CB5A008CBAFA /* LaunchScreen.storyboard */; };
+		E26A4947254582E400CE450D /* GistDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6581F10F2508CBDA008CBAFA /* GistDetail.storyboard */; };
+		E26A4948254582E400CE450D /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E26A491F254581BF00CE450D /* Release.xcconfig */; };
+		E26A4949254582E400CE450D /* Gists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6581F1012508CBBB008CBAFA /* Gists.storyboard */; };
+		E26A494A254582E400CE450D /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E26A491C2545819500CE450D /* Debug.xcconfig */; };
+		E26A494B254582E400CE450D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6581F0F22508CB5A008CBAFA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		053D221016495D7969834ACE /* Pods_MobvenIOSTI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobvenIOSTI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6581F0E62508CB55008CBAFA /* MobvenIOSTI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobvenIOSTI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6581F0E62508CB55008CBAFA /* MobvenIOSTIDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobvenIOSTIDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6581F0E92508CB55008CBAFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6581F0F22508CB5A008CBAFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6581F0F52508CB5A008CBAFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +90,10 @@
 		6DA088AB2517E905003C9A20 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		6DA088B82517FD6A003C9A20 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B675AB3CE722B626B166FBE6 /* Pods-MobvenIOSTI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobvenIOSTI.debug.xcconfig"; path = "Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI.debug.xcconfig"; sourceTree = "<group>"; };
+		E26A491C2545819500CE450D /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		E26A491F254581BF00CE450D /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		E26A4950254582E400CE450D /* MobvenIOSTIRelease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobvenIOSTIRelease.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26A4951254582E400CE450D /* MobvenIOSTI copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MobvenIOSTI copy-Info.plist"; path = "/Users/mertejder/MOBVEN/iOS-TI/MobvenIOSTI copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +102,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D503EEDB290CCA0C5873D305 /* Pods_MobvenIOSTI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26A4943254582E400CE450D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26A4944254582E400CE450D /* Pods_MobvenIOSTI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,13 +131,15 @@
 				6581F0E72508CB55008CBAFA /* Products */,
 				A130B62F72A5FFBC95D4CE75 /* Pods */,
 				EC326664533136FB9080FB90 /* Frameworks */,
+				E26A4951254582E400CE450D /* MobvenIOSTI copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		6581F0E72508CB55008CBAFA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6581F0E62508CB55008CBAFA /* MobvenIOSTI.app */,
+				6581F0E62508CB55008CBAFA /* MobvenIOSTIDebug.app */,
+				E26A4950254582E400CE450D /* MobvenIOSTIRelease.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +155,8 @@
 				6581F0F22508CB5A008CBAFA /* Assets.xcassets */,
 				6581F0F42508CB5A008CBAFA /* LaunchScreen.storyboard */,
 				6581F0F72508CB5A008CBAFA /* Info.plist */,
+				E26A491C2545819500CE450D /* Debug.xcconfig */,
+				E26A491F254581BF00CE450D /* Release.xcconfig */,
 			);
 			path = MobvenIOSTI;
 			sourceTree = "<group>";
@@ -187,7 +231,6 @@
 				B675AB3CE722B626B166FBE6 /* Pods-MobvenIOSTI.debug.xcconfig */,
 				676A94805920B1466CEA82A5 /* Pods-MobvenIOSTI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -202,9 +245,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6581F0E52508CB55008CBAFA /* MobvenIOSTI */ = {
+		6581F0E52508CB55008CBAFA /* MobvenIOSTIDebug */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6581F0FA2508CB5A008CBAFA /* Build configuration list for PBXNativeTarget "MobvenIOSTI" */;
+			buildConfigurationList = 6581F0FA2508CB5A008CBAFA /* Build configuration list for PBXNativeTarget "MobvenIOSTIDebug" */;
 			buildPhases = (
 				06092CE593A69E30B027A613 /* [CP] Check Pods Manifest.lock */,
 				6581F0E22508CB55008CBAFA /* Sources */,
@@ -216,9 +259,28 @@
 			);
 			dependencies = (
 			);
-			name = MobvenIOSTI;
+			name = MobvenIOSTIDebug;
 			productName = versionApp;
-			productReference = 6581F0E62508CB55008CBAFA /* MobvenIOSTI.app */;
+			productReference = 6581F0E62508CB55008CBAFA /* MobvenIOSTIDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E26A492D254582E400CE450D /* MobvenIOSTIRelease */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E26A494D254582E400CE450D /* Build configuration list for PBXNativeTarget "MobvenIOSTIRelease" */;
+			buildPhases = (
+				E26A492E254582E400CE450D /* [CP] Check Pods Manifest.lock */,
+				E26A492F254582E400CE450D /* Sources */,
+				E26A4943254582E400CE450D /* Frameworks */,
+				E26A4945254582E400CE450D /* Resources */,
+				E26A494C254582E400CE450D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobvenIOSTIRelease;
+			productName = versionApp;
+			productReference = E26A4950254582E400CE450D /* MobvenIOSTIRelease.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -249,7 +311,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6581F0E52508CB55008CBAFA /* MobvenIOSTI */,
+				E26A492D254582E400CE450D /* MobvenIOSTIRelease */,
+				6581F0E52508CB55008CBAFA /* MobvenIOSTIDebug */,
 			);
 		};
 /* End PBXProject section */
@@ -261,8 +324,23 @@
 			files = (
 				6581F0F62508CB5A008CBAFA /* LaunchScreen.storyboard in Resources */,
 				6581F1162508CBDA008CBAFA /* GistDetail.storyboard in Resources */,
+				E26A4920254581BF00CE450D /* Release.xcconfig in Resources */,
 				6581F1082508CBBB008CBAFA /* Gists.storyboard in Resources */,
+				E26A491D2545819500CE450D /* Debug.xcconfig in Resources */,
 				6581F0F32508CB5A008CBAFA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26A4945254582E400CE450D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26A4946254582E400CE450D /* LaunchScreen.storyboard in Resources */,
+				E26A4947254582E400CE450D /* GistDetail.storyboard in Resources */,
+				E26A4948254582E400CE450D /* Release.xcconfig in Resources */,
+				E26A4949254582E400CE450D /* Gists.storyboard in Resources */,
+				E26A494A254582E400CE450D /* Debug.xcconfig in Resources */,
+				E26A494B254582E400CE450D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +386,45 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E26A492E254582E400CE450D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobvenIOSTI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E26A494C254582E400CE450D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -337,6 +454,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E26A492F254582E400CE450D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26A4930254582E400CE450D /* String.swift in Sources */,
+				E26A4931254582E400CE450D /* GistsWorker.swift in Sources */,
+				E26A4932254582E400CE450D /* GistsRouter.swift in Sources */,
+				E26A4933254582E400CE450D /* API.swift in Sources */,
+				E26A4934254582E400CE450D /* GistDetailInteractor.swift in Sources */,
+				E26A4935254582E400CE450D /* GistDetailWorker.swift in Sources */,
+				E26A4936254582E400CE450D /* VersionConfig.swift in Sources */,
+				E26A4937254582E400CE450D /* GistDetailPresenter.swift in Sources */,
+				E26A4938254582E400CE450D /* GistsViewController.swift in Sources */,
+				E26A4939254582E400CE450D /* UIApplication.swift in Sources */,
+				E26A493A254582E400CE450D /* GistTableViewCell.swift in Sources */,
+				E26A493B254582E400CE450D /* GistDetailViewController.swift in Sources */,
+				E26A493C254582E400CE450D /* GistsModels.swift in Sources */,
+				E26A493D254582E400CE450D /* AppDelegate.swift in Sources */,
+				E26A493E254582E400CE450D /* GistsInteractor.swift in Sources */,
+				E26A493F254582E400CE450D /* Gist.swift in Sources */,
+				E26A4940254582E400CE450D /* GistDetailRouter.swift in Sources */,
+				E26A4941254582E400CE450D /* GistDetailModels.swift in Sources */,
+				E26A4942254582E400CE450D /* GistsPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -353,6 +496,7 @@
 /* Begin XCBuildConfiguration section */
 		6581F0F82508CB5A008CBAFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E26A491C2545819500CE450D /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -413,6 +557,7 @@
 		};
 		6581F0F92508CB5A008CBAFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E26A491F254581BF00CE450D /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -479,7 +624,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobven.ios.tiapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobven.ios.tiapp.qa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -495,6 +640,48 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TBXF7RJBHZ;
 				INFOPLIST_FILE = MobvenIOSTI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobven.ios.tiapp.qa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E26A494E254582E400CE450D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B675AB3CE722B626B166FBE6 /* Pods-MobvenIOSTI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TBXF7RJBHZ;
+				INFOPLIST_FILE = "MobvenIOSTI copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobven.ios.tiapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E26A494F254582E400CE450D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 676A94805920B1466CEA82A5 /* Pods-MobvenIOSTI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TBXF7RJBHZ;
+				INFOPLIST_FILE = "MobvenIOSTI copy-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -519,11 +706,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6581F0FA2508CB5A008CBAFA /* Build configuration list for PBXNativeTarget "MobvenIOSTI" */ = {
+		6581F0FA2508CB5A008CBAFA /* Build configuration list for PBXNativeTarget "MobvenIOSTIDebug" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6581F0FB2508CB5A008CBAFA /* Debug */,
 				6581F0FC2508CB5A008CBAFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E26A494D254582E400CE450D /* Build configuration list for PBXNativeTarget "MobvenIOSTIRelease" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26A494E254582E400CE450D /* Debug */,
+				E26A494F254582E400CE450D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
