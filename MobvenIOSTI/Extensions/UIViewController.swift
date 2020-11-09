@@ -34,6 +34,8 @@ extension UIViewController {
   }
   
   @objc func newViewDidAppear(animated: Bool) {
-    VersionConfig.shared?.show()
+    if AppEnvironment.current == .debug {
+      VersionConfig.shared?.show()
+    }
   }
 }

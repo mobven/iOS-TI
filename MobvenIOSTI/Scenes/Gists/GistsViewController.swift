@@ -57,7 +57,6 @@ final class GistsViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        VersionConfig.shared?.show()
     }
     
 }

@@ -11,5 +11,6 @@ import UIKit
 struct Constants {
   struct InfoPlist {
     static let API_BASE_URL = "API_BASE_URL"
+    static let APP_ENVIRONMENT = "APP_ENVIRONMENT"
   }
 }
