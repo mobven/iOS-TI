@@ -13,7 +13,7 @@ struct Gist: Decodable {
     var url: String?
     var description: String?
     var createdAt: String?
-    var nodeId: Int?
+    var nodeId: String?
     var comments: Int?
     
     var isFavorite: Bool = false
@@ -33,12 +33,12 @@ struct Gist: Decodable {
     }
     
     enum CodingKeys: String, CodingKey {
-        case id
-        case url
-        case description
+        case id = "id"
+        case url = "url"
+        case description = "description"
         case createdAt = "created_at"
-        case comments
+        case comments = "comments"
         case nodeId = "node_id"
-        case owner
+        case owner = "owner"
     }
 }

@@ -33,12 +33,14 @@ class GistsInteractor: GistsBusinessLogic, GistsDataStore {
             case .success(let gists):
                 do {
                     let data = try JSONSerialization.data(withJSONObject: gists, options: .prettyPrinted)
+
                     let result = try JSONDecoder().decode([Gist].self, from: data)
                     
                     self?.gists = result
                     self?.presenter?.presentGists(response: Gists.Fetch.Response(gists: result))
                 } catch {
                     print("Error occured")
+                    print(error.localizedDescription)
                 }
                 
             case .failure(let error):
