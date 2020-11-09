@@ -53,6 +53,8 @@ final class GistsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         interactor?.fetchGists(request: Gists.Fetch.Request())
     }
     
