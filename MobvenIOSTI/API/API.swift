@@ -13,7 +13,13 @@ enum API: URLRequestConvertible {
     
     case gists
     
-    static let BASE_URL = "https://api.github.com/gists/public"
+  static var BASE_URL: String {
+    if let apiUrlStr = Constants.InfoPlist.API_BASE_URL.valueFromInfoPlist as? String {
+      return apiUrlStr
+    }
+    
+    return ""
+  }
     
     var method: HTTPMethod {
         switch self {

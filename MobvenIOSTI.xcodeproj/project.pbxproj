@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0D8687CBB34D319CF3D54B80 /* Pods_MobvenIOSTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2772CD35A0C5C42590A553C5 /* Pods_MobvenIOSTI.framework */; };
+		164667BB2559D73900DB204F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164667BA2559D73900DB204F /* Constants.swift */; };
 		6581F0EA2508CB55008CBAFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F0E92508CB55008CBAFA /* AppDelegate.swift */; };
 		6581F0F32508CB5A008CBAFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6581F0F22508CB5A008CBAFA /* Assets.xcassets */; };
 		6581F0F62508CB5A008CBAFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6581F0F42508CB5A008CBAFA /* LaunchScreen.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		164667BA2559D73900DB204F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		17F3544FF0FE209F801317CC /* Pods-MobvenIOSTI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobvenIOSTI.release.xcconfig"; path = "Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI.release.xcconfig"; sourceTree = "<group>"; };
 		2772CD35A0C5C42590A553C5 /* Pods_MobvenIOSTI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobvenIOSTI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6581F0E62508CB55008CBAFA /* MobvenIOSTI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobvenIOSTI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +84,6 @@
 				EBDF01B904FA02E0C3776F2B /* Pods-MobvenIOSTI.debug.xcconfig */,
 				17F3544FF0FE209F801317CC /* Pods-MobvenIOSTI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -123,6 +124,7 @@
 				6581F0F22508CB5A008CBAFA /* Assets.xcassets */,
 				6581F0F42508CB5A008CBAFA /* LaunchScreen.storyboard */,
 				6581F0F72508CB5A008CBAFA /* Info.plist */,
+				164667BA2559D73900DB204F /* Constants.swift */,
 			);
 			path = MobvenIOSTI;
 			sourceTree = "<group>";
@@ -330,6 +332,7 @@
 				6581F10C2508CBBB008CBAFA /* GistsModels.swift in Sources */,
 				6581F0EA2508CB55008CBAFA /* AppDelegate.swift in Sources */,
 				6581F10B2508CBBB008CBAFA /* GistsInteractor.swift in Sources */,
+				164667BB2559D73900DB204F /* Constants.swift in Sources */,
 				6581F12625091422008CBAFA /* Gist.swift in Sources */,
 				6581F11C2508CBDA008CBAFA /* GistDetailRouter.swift in Sources */,
 				6581F11A2508CBDA008CBAFA /* GistDetailModels.swift in Sources */,
@@ -469,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EBDF01B904FA02E0C3776F2B /* Pods-MobvenIOSTI.debug.xcconfig */;
 			buildSettings = {
+				API_BASE_URL = "https://api.github.com/gists/public";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -490,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17F3544FF0FE209F801317CC /* Pods-MobvenIOSTI.release.xcconfig */;
 			buildSettings = {
+				API_BASE_URL = "https://api.github.com/gists/public";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
