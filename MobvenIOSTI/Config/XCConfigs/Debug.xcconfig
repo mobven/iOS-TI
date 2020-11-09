@@ -10,3 +10,5 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 API_URL = https:\/\/api.github.com/gists/public
+VERSION_NUMBER = 1.2
+BUILD_NUMBER = 3
