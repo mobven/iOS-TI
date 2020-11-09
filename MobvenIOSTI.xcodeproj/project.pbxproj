@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,10 +28,9 @@
 		6581F124250913B9008CBAFA /* VersionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F123250913B9008CBAFA /* VersionConfig.swift */; };
 		6581F12625091422008CBAFA /* Gist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F12525091422008CBAFA /* Gist.swift */; };
 		6581F130250A0E4B008CBAFA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F12F250A0E4B008CBAFA /* API.swift */; };
-		6DA088AC2517E905003C9A20 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088AB2517E905003C9A20 /* UIApplication.swift */; };
-		6DA088B92517FD6A003C9A20 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088B82517FD6A003C9A20 /* String.swift */; };
 		8937D2112559B3F2003E0431 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8937D2102559B3F2003E0431 /* Debug.xcconfig */; };
 		8937D2162559B442003E0431 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8937D2152559B43C003E0431 /* Release.xcconfig */; };
+		8937D26C2559C609003E0431 /* Extensions in Frameworks */ = {isa = PBXBuildFile; productRef = 8937D26B2559C609003E0431 /* Extensions */; };
 		AE4913174D9001C9225644DA /* Pods_MobvenIOSTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6ECE2A95CA531B5400767C4 /* Pods_MobvenIOSTI.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,10 +59,9 @@
 		6581F123250913B9008CBAFA /* VersionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionConfig.swift; sourceTree = "<group>"; };
 		6581F12525091422008CBAFA /* Gist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gist.swift; sourceTree = "<group>"; };
 		6581F12F250A0E4B008CBAFA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		6DA088AB2517E905003C9A20 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
-		6DA088B82517FD6A003C9A20 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		8937D2102559B3F2003E0431 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		8937D2152559B43C003E0431 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		8937D2682559C5C7003E0431 /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = text; path = Extensions; sourceTree = SOURCE_ROOT; };
 		B6ECE2A95CA531B5400767C4 /* Pods_MobvenIOSTI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobvenIOSTI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5B44F0109409A9E5F59BD1 /* Pods-MobvenIOSTI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobvenIOSTI.release.xcconfig"; path = "Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8937D26C2559C609003E0431 /* Extensions in Frameworks */,
 				AE4913174D9001C9225644DA /* Pods_MobvenIOSTI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +109,7 @@
 		6581F0E82508CB55008CBAFA /* MobvenIOSTI */ = {
 			isa = PBXGroup;
 			children = (
+				8937D2682559C5C7003E0431 /* Extensions */,
 				65811167250A6E42008CBAFA /* Config */,
 				6581F12725091624008CBAFA /* Extensions */,
 				6581F0FE2508CB69008CBAFA /* API */,
@@ -180,8 +180,6 @@
 		6581F12725091624008CBAFA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				6DA088AB2517E905003C9A20 /* UIApplication.swift */,
-				6DA088B82517FD6A003C9A20 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -230,6 +228,9 @@
 			dependencies = (
 			);
 			name = MobvenIOSTI;
+			packageProductDependencies = (
+				8937D26B2559C609003E0431 /* Extensions */,
+			);
 			productName = versionApp;
 			productReference = 6581F0E62508CB55008CBAFA /* MobvenIOSTI.app */;
 			productType = "com.apple.product-type.application";
@@ -330,7 +331,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DA088B92517FD6A003C9A20 /* String.swift in Sources */,
 				6581F10D2508CBBB008CBAFA /* GistsWorker.swift in Sources */,
 				6581F10E2508CBBB008CBAFA /* GistsRouter.swift in Sources */,
 				6581F130250A0E4B008CBAFA /* API.swift in Sources */,
@@ -339,7 +339,6 @@
 				6581F124250913B9008CBAFA /* VersionConfig.swift in Sources */,
 				6581F1182508CBDA008CBAFA /* GistDetailPresenter.swift in Sources */,
 				6581F1092508CBBB008CBAFA /* GistsViewController.swift in Sources */,
-				6DA088AC2517E905003C9A20 /* UIApplication.swift in Sources */,
 				6581F1222509107B008CBAFA /* GistTableViewCell.swift in Sources */,
 				6581F1172508CBDA008CBAFA /* GistDetailViewController.swift in Sources */,
 				6581F10C2508CBBB008CBAFA /* GistsModels.swift in Sources */,
@@ -546,6 +545,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8937D26B2559C609003E0431 /* Extensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Extensions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6581F0DE2508CB55008CBAFA /* Project object */;
 }

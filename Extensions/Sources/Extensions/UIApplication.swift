@@ -40,8 +40,13 @@ public extension UIApplication {
             return
         }
         if canOpenURL(settingsUrl) {
-            open(settingsUrl, options: [:], completionHandler: nil)
-            open(settingsUrl, options: [:], completionHandler: completionHandler)
+            if #available(iOS 10.0, *) {
+                open(settingsUrl, options: [:], completionHandler: nil)
+                open(settingsUrl, options: [:], completionHandler: completionHandler)
+            } else {
+                // Fallback on earlier versions
+            }
+           
         }
     }
     

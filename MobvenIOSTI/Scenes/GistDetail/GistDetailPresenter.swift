@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Extensions
 import UIKit
 
 protocol GistDetailPresentationLogic: class {
