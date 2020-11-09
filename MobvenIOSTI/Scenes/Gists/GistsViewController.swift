@@ -98,7 +98,8 @@ extension GistsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
+        return 100
     }
     
 }
