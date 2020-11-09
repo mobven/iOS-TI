@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,8 @@
 		6581F130250A0E4B008CBAFA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F12F250A0E4B008CBAFA /* API.swift */; };
 		6DA088AC2517E905003C9A20 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088AB2517E905003C9A20 /* UIApplication.swift */; };
 		6DA088B92517FD6A003C9A20 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088B82517FD6A003C9A20 /* String.swift */; };
+		8937D2112559B3F2003E0431 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8937D2102559B3F2003E0431 /* Debug.xcconfig */; };
+		8937D2162559B442003E0431 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8937D2152559B43C003E0431 /* Release.xcconfig */; };
 		AE4913174D9001C9225644DA /* Pods_MobvenIOSTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6ECE2A95CA531B5400767C4 /* Pods_MobvenIOSTI.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		6581F12F250A0E4B008CBAFA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		6DA088AB2517E905003C9A20 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		6DA088B82517FD6A003C9A20 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		8937D2102559B3F2003E0431 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		8937D2152559B43C003E0431 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		B6ECE2A95CA531B5400767C4 /* Pods_MobvenIOSTI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobvenIOSTI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5B44F0109409A9E5F59BD1 /* Pods-MobvenIOSTI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobvenIOSTI.release.xcconfig"; path = "Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +83,7 @@
 		65811167250A6E42008CBAFA /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				8937D2132559B40F003E0431 /* XCConfigs */,
 				6581F123250913B9008CBAFA /* VersionConfig.swift */,
 			);
 			path = Config;
@@ -187,7 +192,6 @@
 				33C3884F9E4A099535E4E5DD /* Pods-MobvenIOSTI.debug.xcconfig */,
 				EE5B44F0109409A9E5F59BD1 /* Pods-MobvenIOSTI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -197,6 +201,15 @@
 				B6ECE2A95CA531B5400767C4 /* Pods_MobvenIOSTI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8937D2132559B40F003E0431 /* XCConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				8937D2152559B43C003E0431 /* Release.xcconfig */,
+				8937D2102559B3F2003E0431 /* Debug.xcconfig */,
+			);
+			path = XCConfigs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +274,9 @@
 			files = (
 				6581F0F62508CB5A008CBAFA /* LaunchScreen.storyboard in Resources */,
 				6581F1162508CBDA008CBAFA /* GistDetail.storyboard in Resources */,
+				8937D2162559B442003E0431 /* Release.xcconfig in Resources */,
 				6581F1082508CBBB008CBAFA /* Gists.storyboard in Resources */,
+				8937D2112559B3F2003E0431 /* Debug.xcconfig in Resources */,
 				6581F0F32508CB5A008CBAFA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +368,7 @@
 /* Begin XCBuildConfiguration section */
 		6581F0F82508CB5A008CBAFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8937D2102559B3F2003E0431 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -413,6 +429,7 @@
 		};
 		6581F0F92508CB5A008CBAFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8937D2152559B43C003E0431 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

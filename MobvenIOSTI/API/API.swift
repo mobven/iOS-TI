@@ -12,9 +12,7 @@ import Alamofire
 enum API: URLRequestConvertible {
     
     case gists
-    
-    static let BASE_URL = "https://api.github.com/gists/public"
-    
+    static var BASE_URL =  Bundle.main.infoDictionary?["API URL"] as! String
     var method: HTTPMethod {
         switch self {
         case .gists:
@@ -23,12 +21,12 @@ enum API: URLRequestConvertible {
     }
     
     func asURLRequest() throws -> URLRequest {
-        let url = try API.BASE_URL.asURL()
+        let url = try API.BASE_URL.replacingOccurrences(of: "\\", with: "").asURL()
         
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method.rawValue
         
         return urlRequest
     }
-    
+
 }
