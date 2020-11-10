@@ -14,8 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        UIViewController.classInitForVersion
+        let showVersion = Bundle.main.infoDictionary?["ShowVersion"] as? String ?? "NO"
+        if showVersion == "YES" {
+            UIViewController.classInitForVersion
+        }
+        
         return true
     }
     
