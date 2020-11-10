@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1C3CDD8B255B14D100754033 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1C3CDD8A255B14D100754033 /* Development.xcconfig */; };
 		1C3CDD8D255B14E800754033 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1C3CDD8C255B14E100754033 /* Production.xcconfig */; };
+		1CB59DE4255B262500ED3872 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB59DE3255B262500ED3872 /* UIViewController.swift */; };
 		4E714CC07D95BE01E4359C1A /* Pods_MobvenIOSTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974032092EDA067EDC20773C /* Pods_MobvenIOSTI.framework */; };
 		6581F0EA2508CB55008CBAFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F0E92508CB55008CBAFA /* AppDelegate.swift */; };
 		6581F0F32508CB5A008CBAFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6581F0F22508CB5A008CBAFA /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		1C3CDD8A255B14D100754033 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		1C3CDD8C255B14E100754033 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		1CB59DE3255B262500ED3872 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		34003D0A51CC164C61158A7B /* Pods-MobvenIOSTI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobvenIOSTI.release.xcconfig"; path = "Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI.release.xcconfig"; sourceTree = "<group>"; };
 		6581F0E62508CB55008CBAFA /* MobvenIOSTI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobvenIOSTI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6581F0E92508CB55008CBAFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 			children = (
 				6DA088AB2517E905003C9A20 /* UIApplication.swift */,
 				6DA088B82517FD6A003C9A20 /* String.swift */,
+				1CB59DE3255B262500ED3872 /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				6581F1172508CBDA008CBAFA /* GistDetailViewController.swift in Sources */,
 				6581F10C2508CBBB008CBAFA /* GistsModels.swift in Sources */,
 				6581F0EA2508CB55008CBAFA /* AppDelegate.swift in Sources */,
+				1CB59DE4255B262500ED3872 /* UIViewController.swift in Sources */,
 				6581F10B2508CBBB008CBAFA /* GistsInteractor.swift in Sources */,
 				6581F12625091422008CBAFA /* Gist.swift in Sources */,
 				6581F11C2508CBDA008CBAFA /* GistDetailRouter.swift in Sources */,
