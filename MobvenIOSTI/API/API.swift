@@ -13,7 +13,7 @@ enum API: URLRequestConvertible {
     
     case gists
     
-    static let BASE_URL = "https://api.github.com/gists/public"
+    static let BASE_URL = Bundle.main.infoDictionary?["ApiBaseURL"] as? String ?? ""
     
     var method: HTTPMethod {
         switch self {
