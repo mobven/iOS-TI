@@ -73,6 +73,11 @@ final class GistDetailViewController: UIViewController {
             let config = SFSafariViewController.Configuration()
             
             let vc = SFSafariViewController(url: url, configuration: config)
+            
+            if #available(iOS 13, *) {
+                vc.modalPresentationStyle = .fullScreen
+            }
+            
             present(vc, animated: true)
         }
     }
