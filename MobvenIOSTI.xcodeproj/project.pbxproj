@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,8 @@
 		6DA088AC2517E905003C9A20 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088AB2517E905003C9A20 /* UIApplication.swift */; };
 		6DA088B92517FD6A003C9A20 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088B82517FD6A003C9A20 /* String.swift */; };
 		A170355CECFFE647C82770AA /* Pods_MobvenIOSTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD65DE53045E2FA403E2D4C /* Pods_MobvenIOSTI.framework */; };
+		EB2EF26625646403008DDB36 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EB2EF26525646403008DDB36 /* Debug.xcconfig */; };
+		EB2EF26925646416008DDB36 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EB2EF26825646416008DDB36 /* Release.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		6DA088AB2517E905003C9A20 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		6DA088B82517FD6A003C9A20 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B55E2DBE11D9B7464025B09F /* Pods-MobvenIOSTI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobvenIOSTI.debug.xcconfig"; path = "Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI.debug.xcconfig"; sourceTree = "<group>"; };
+		EB2EF26525646403008DDB36 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		EB2EF26825646416008DDB36 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		FCEBD542DE7FEE7D13534D31 /* Pods-MobvenIOSTI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobvenIOSTI.release.xcconfig"; path = "Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +91,8 @@
 		6581F0DD2508CB55008CBAFA = {
 			isa = PBXGroup;
 			children = (
+				EB2EF26525646403008DDB36 /* Debug.xcconfig */,
+				EB2EF26825646416008DDB36 /* Release.xcconfig */,
 				6581F0E82508CB55008CBAFA /* MobvenIOSTI */,
 				6581F0E72508CB55008CBAFA /* Products */,
 				734E73DF7DE321161F5853AA /* Pods */,
@@ -187,7 +193,6 @@
 				B55E2DBE11D9B7464025B09F /* Pods-MobvenIOSTI.debug.xcconfig */,
 				FCEBD542DE7FEE7D13534D31 /* Pods-MobvenIOSTI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -261,7 +266,9 @@
 			files = (
 				6581F0F62508CB5A008CBAFA /* LaunchScreen.storyboard in Resources */,
 				6581F1162508CBDA008CBAFA /* GistDetail.storyboard in Resources */,
+				EB2EF26925646416008DDB36 /* Release.xcconfig in Resources */,
 				6581F1082508CBBB008CBAFA /* Gists.storyboard in Resources */,
+				EB2EF26625646403008DDB36 /* Debug.xcconfig in Resources */,
 				6581F0F32508CB5A008CBAFA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +360,7 @@
 /* Begin XCBuildConfiguration section */
 		6581F0F82508CB5A008CBAFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2EF26525646403008DDB36 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -413,6 +421,7 @@
 		};
 		6581F0F92508CB5A008CBAFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2EF26825646416008DDB36 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

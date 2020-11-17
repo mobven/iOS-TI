@@ -23,9 +23,11 @@ enum API: URLRequestConvertible {
     }
     
     func asURLRequest() throws -> URLRequest {
-        let url = try API.BASE_URL.asURL()
+		var urlString = try Bundle.main.object(forInfoDictionaryKey: "BASE_URL") as! String
+		urlString = urlString.replacingOccurrences(of: "\\", with: "")
+		let url = URL(string: urlString)
         
-        var urlRequest = URLRequest(url: url)
+        var urlRequest = URLRequest(url: url!)
         urlRequest.httpMethod = method.rawValue
         
         return urlRequest
