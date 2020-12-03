@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+import SafariServices
 
 protocol GistDetailDisplayLogic: class {
     func displayGistDetail(viewModel: GistDetail.FetchDetail.ViewModel)
@@ -66,8 +67,12 @@ final class GistDetailViewController: UIViewController {
         router?.updateFavoriteRouting()
     }
     
-    @IBAction func selectURL() {
-        // FIXME: route to gist url showing SFSafariViewController.
+    @IBAction func selectURL(button: UIButton) {
+        if let title = button.title(for: .normal), let url = URL(string: title) {
+            let safariController = SFSafariViewController(url: url)
+            safariController.modalPresentationStyle = .overFullScreen
+            self.present(safariController, animated: true, completion: nil)
+        }
     }
     
 }
