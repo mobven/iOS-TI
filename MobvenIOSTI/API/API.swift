@@ -9,11 +9,13 @@
 import Foundation
 import Alamofire
 
+enum APIError: Error {
+    case invalidBaseURL
+}
+
 enum API: URLRequestConvertible {
     
     case gists
-    
-    static let BASE_URL = "https://api.github.com/gists/public"
     
     var method: HTTPMethod {
         switch self {
@@ -23,8 +25,13 @@ enum API: URLRequestConvertible {
     }
     
     func asURLRequest() throws -> URLRequest {
-        let url = try API.BASE_URL.asURL()
-        
+        guard let infoDict = Bundle.main.infoDictionary, let urlString = infoDict["BaseURL"] as? String, let scheme = infoDict["BaseURLScheme"] as? String else {
+            throw APIError.invalidBaseURL
+        }
+        let fullURLString = scheme + "//"  + urlString
+        guard let url = URL(string: fullURLString) else {
+            throw APIError.invalidBaseURL
+        }
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method.rawValue
         
