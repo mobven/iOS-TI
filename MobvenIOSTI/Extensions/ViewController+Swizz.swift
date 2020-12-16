@@ -12,7 +12,9 @@ extension UIViewController {
   @objc
   func viewDidAppearOverride(_ animated: Bool) {
     self.viewDidAppearOverride(animated)
-    VersionConfig.shared?.show()
+    #if DEBUG
+      VersionConfig.shared?.show()
+    #endif
   }
   static func swizzleViewDidAppear() {
     if self != UIViewController.self {
