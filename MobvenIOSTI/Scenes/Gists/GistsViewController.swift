@@ -54,6 +54,7 @@ final class GistsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         interactor?.fetchGists(request: Gists.Fetch.Request())
+        tableView.estimatedRowHeight = 44
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -98,7 +99,7 @@ extension GistsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        100
+      UITableView.automaticDimension
     }
     
 }
