@@ -33,6 +33,7 @@
 		BD22675B258A673100E7DDD6 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BD22675A258A673100E7DDD6 /* SDWebImage */; };
 		BD22675E258A674700E7DDD6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BD22675D258A674700E7DDD6 /* Alamofire */; };
 		BD226762258A6A3E00E7DDD6 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD226761258A6A3E00E7DDD6 /* Environment.swift */; };
+		BD226764258A771E00E7DDD6 /* ViewController+Swizz.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD226763258A771E00E7DDD6 /* ViewController+Swizz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		BD22675F258A699200E7DDD6 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		BD226760258A69A000E7DDD6 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		BD226761258A6A3E00E7DDD6 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		BD226763258A771E00E7DDD6 /* ViewController+Swizz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Swizz.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 			children = (
 				6DA088AB2517E905003C9A20 /* UIApplication.swift */,
 				6DA088B82517FD6A003C9A20 /* String.swift */,
+				BD226763258A771E00E7DDD6 /* ViewController+Swizz.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				6581F1192508CBDA008CBAFA /* GistDetailInteractor.swift in Sources */,
 				6581F11B2508CBDA008CBAFA /* GistDetailWorker.swift in Sources */,
 				6581F124250913B9008CBAFA /* VersionConfig.swift in Sources */,
+				BD226764258A771E00E7DDD6 /* ViewController+Swizz.swift in Sources */,
 				6581F1182508CBDA008CBAFA /* GistDetailPresenter.swift in Sources */,
 				6581F1092508CBBB008CBAFA /* GistsViewController.swift in Sources */,
 				BD226762258A6A3E00E7DDD6 /* Environment.swift in Sources */,
