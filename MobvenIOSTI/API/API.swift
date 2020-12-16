@@ -13,9 +13,10 @@ enum API: URLRequestConvertible {
     
     case gists
     
-    static let BASE_URL = "https://api.github.com/gists/public"
+  static let BASE_URL = Environment.baseUrl
     
     var method: HTTPMethod {
+      
         switch self {
         case .gists:
             return .get
