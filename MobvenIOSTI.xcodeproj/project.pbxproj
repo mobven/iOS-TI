@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,7 @@
 		6581F130250A0E4B008CBAFA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F12F250A0E4B008CBAFA /* API.swift */; };
 		6DA088AC2517E905003C9A20 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088AB2517E905003C9A20 /* UIApplication.swift */; };
 		6DA088B92517FD6A003C9A20 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088B82517FD6A003C9A20 /* String.swift */; };
+		DB92B5D58F39B554BC079C8C /* Pods_MobvenIOSTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4F9B108AB15C7AFFF531FC /* Pods_MobvenIOSTI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,11 @@
 		6581F12F250A0E4B008CBAFA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		6DA088AB2517E905003C9A20 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		6DA088B82517FD6A003C9A20 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		AA4F9B108AB15C7AFFF531FC /* Pods_MobvenIOSTI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobvenIOSTI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E5DE6A25A62D1500A5ECC5 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
+		B1E5DE6B25A62D2800A5ECC5 /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
+		C4001D190CCB5B1363577123 /* Pods-MobvenIOSTI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobvenIOSTI.debug.xcconfig"; path = "Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI.debug.xcconfig"; sourceTree = "<group>"; };
+		FAB9AF010FF49C418C466417 /* Pods-MobvenIOSTI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobvenIOSTI.release.xcconfig"; path = "Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB92B5D58F39B554BC079C8C /* Pods_MobvenIOSTI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				6581F123250913B9008CBAFA /* VersionConfig.swift */,
+				B1E5DE6A25A62D1500A5ECC5 /* debug.xcconfig */,
+				B1E5DE6B25A62D2800A5ECC5 /* release.xcconfig */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -84,6 +93,8 @@
 			children = (
 				6581F0E82508CB55008CBAFA /* MobvenIOSTI */,
 				6581F0E72508CB55008CBAFA /* Products */,
+				D26CD6C688ACFB0E89366B99 /* Pods */,
+				AC06BA246FDFE81981CB3AF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +185,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		AC06BA246FDFE81981CB3AF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA4F9B108AB15C7AFFF531FC /* Pods_MobvenIOSTI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D26CD6C688ACFB0E89366B99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4001D190CCB5B1363577123 /* Pods-MobvenIOSTI.debug.xcconfig */,
+				FAB9AF010FF49C418C466417 /* Pods-MobvenIOSTI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,17 +209,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6581F0FA2508CB5A008CBAFA /* Build configuration list for PBXNativeTarget "MobvenIOSTI" */;
 			buildPhases = (
+				8AD9CECDB75D152B80A747FE /* [CP] Check Pods Manifest.lock */,
 				6581F0E22508CB55008CBAFA /* Sources */,
 				6581F0E32508CB55008CBAFA /* Frameworks */,
 				6581F0E42508CB55008CBAFA /* Resources */,
+				60921E58A83B27367B34E1E9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MobvenIOSTI;
-			packageProductDependencies = (
-			);
 			productName = versionApp;
 			productReference = 6581F0E62508CB55008CBAFA /* MobvenIOSTI.app */;
 			productType = "com.apple.product-type.application";
@@ -220,8 +248,6 @@
 				Base,
 			);
 			mainGroup = 6581F0DD2508CB55008CBAFA;
-			packageReferences = (
-			);
 			productRefGroup = 6581F0E72508CB55008CBAFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -244,6 +270,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60921E58A83B27367B34E1E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AD9CECDB75D152B80A747FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobvenIOSTI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6581F0E22508CB55008CBAFA /* Sources */ = {
@@ -288,6 +356,7 @@
 /* Begin XCBuildConfiguration section */
 		6581F0F82508CB5A008CBAFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E5DE6A25A62D1500A5ECC5 /* debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -348,6 +417,7 @@
 		};
 		6581F0F92508CB5A008CBAFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E5DE6B25A62D2800A5ECC5 /* release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -402,6 +472,7 @@
 		};
 		6581F0FB2508CB5A008CBAFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4001D190CCB5B1363577123 /* Pods-MobvenIOSTI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -422,6 +493,7 @@
 		};
 		6581F0FC2508CB5A008CBAFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAB9AF010FF49C418C466417 /* Pods-MobvenIOSTI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

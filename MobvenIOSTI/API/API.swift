@@ -13,7 +13,7 @@ enum API: URLRequestConvertible {
     
     case gists
     
-    static let BASE_URL = "https://api.github.com/gists/public"
+    static let BASE_URL =  Config.baseURL  //"https://api.github.com/gists/public"
     
     var method: HTTPMethod {
         switch self {
@@ -31,4 +31,36 @@ enum API: URLRequestConvertible {
         return urlRequest
     }
     
+}
+
+
+enum Configuration {
+
+    enum Error: Swift.Error {
+        case missingKey, invalidValue
+    }
+
+    static func value<T>(for key: String) throws -> T where T: LosslessStringConvertible {
+        guard let object = Bundle.main.object(forInfoDictionaryKey:key) else {
+            throw Error.missingKey
+        }
+
+        switch object {
+            case let value as T:
+                return value
+            case let string as String:
+                guard let value = T(string) else { fallthrough }
+                return value
+            default:
+                throw Error.invalidValue
+        }
+    }
+}
+
+enum Config {
+
+    static var baseURL: String {
+        let str = try! Configuration.value(for: "BASE_URL") as String
+        return str.replacingOccurrences(of: "\\", with: "")
+    }
 }

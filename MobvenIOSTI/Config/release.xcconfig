@@ -1,0 +1,11 @@
+//
+//  release.xcconfig
+//  MobvenIOSTI
+//
+//  Created by Atakan Cengiz KURT on 6.01.2021.
+//  Copyright © 2021 Mobven. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+BASE_URL = https:\/\/api.github.com\/gists\/public
