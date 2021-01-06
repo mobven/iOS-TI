@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+import SafariServices
 
 protocol GistDetailDisplayLogic: class {
     func displayGistDetail(viewModel: GistDetail.FetchDetail.ViewModel)
@@ -18,6 +19,8 @@ final class GistDetailViewController: UIViewController {
     
     var interactor: GistDetailBusinessLogic?
     var router: (GistDetailRoutingLogic & GistDetailDataPassing)?
+    
+    var url: String?
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var idLabel: UILabel!
@@ -68,6 +71,16 @@ final class GistDetailViewController: UIViewController {
     
     @IBAction func selectURL() {
         // FIXME: route to gist url showing SFSafariViewController.
+        guard  url != nil else{
+            return
+        }
+        
+        if let url = URL(string: url!){
+            let config = SFSafariViewController.Configuration()
+            config.entersReaderIfAvailable = false
+            let vc = SFSafariViewController(url: url, configuration: config)
+            present(vc, animated: true, completion: nil)
+        }
     }
     
 }
@@ -77,6 +90,7 @@ extension GistDetailViewController: GistDetailDisplayLogic {
     func displayGistDetail(viewModel: GistDetail.FetchDetail.ViewModel) {
         imageView.sd_setImage(with: URL(string: viewModel.imageURL))
         idLabel.text = viewModel.id
+        url = viewModel.url
         urlButton.setTitle(viewModel.url, for: .normal)
         dateLabel.text = viewModel.date
         descriptionLabel.text = viewModel.description
