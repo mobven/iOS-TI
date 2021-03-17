@@ -13,7 +13,7 @@ enum API: URLRequestConvertible {
     
     case gists
     
-    static let BASE_URL = "https://api.github.com/gists/public"
+    static let BASE_URL = (Bundle.main.infoDictionary?["API"] as? String)?.replacingOccurrences(of: "\\", with: "")
     
     var method: HTTPMethod {
         switch self {
@@ -23,7 +23,7 @@ enum API: URLRequestConvertible {
     }
     
     func asURLRequest() throws -> URLRequest {
-        let url = try API.BASE_URL.asURL()
+        guard let url = try API.BASE_URL?.asURL() else { return URLRequest(url: URL(string: "")!) }
         
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method.rawValue

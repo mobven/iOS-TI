@@ -1,0 +1,12 @@
+//
+//  production.xcconfig
+//  MobvenIOSTI
+//
+//  Created by Z.Seckin on 17.03.2021.
+//  Copyright © 2021 Mobven. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API = https:\/\/api.github.com\/gists\/public
