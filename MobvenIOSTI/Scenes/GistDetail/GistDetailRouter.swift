@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import SafariServices
 
 protocol GistDetailRoutingLogic: class {
     func updateFavoriteRouting()
+    func routeToSafari(url: String)
 }
 
 protocol GistDetailDataPassing: class {
@@ -18,6 +20,17 @@ protocol GistDetailDataPassing: class {
 }
 
 final class GistDetailRouter: GistDetailRoutingLogic, GistDetailDataPassing {
+    
+    func routeToSafari(url: String) {
+        if let url = URL(string: url) {
+               let config = SFSafariViewController.Configuration()
+               config.entersReaderIfAvailable = true
+
+               let vc = SFSafariViewController(url: url, configuration: config)
+            viewController?.present(vc, animated: true)
+           }
+    }
+    
     
     weak var viewController: GistDetailViewController?
     var dataStore: GistDetailDataStore?

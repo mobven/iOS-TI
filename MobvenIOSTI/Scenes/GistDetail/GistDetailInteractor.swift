@@ -11,6 +11,7 @@ import Foundation
 protocol GistDetailBusinessLogic: class {
     func fetchGistDetail(request: GistDetail.FetchDetail.Request)
     func updateFavorite(request: GistDetail.UpdateFavorite.Request)
+    func openURL(request: GistDetail.OpenSelectedGist.Request)
 }
 
 protocol GistDetailDataStore: class {
@@ -37,6 +38,10 @@ class GistDetailInteractor: GistDetailBusinessLogic, GistDetailDataStore {
         presenter?.presentUpdateFavorite(
             response: GistDetail.UpdateFavorite.Response(isFavorite: selectedGist.isFavorite)
         )
+    }
+    
+    func openURL(request: GistDetail.OpenSelectedGist.Request) {
+        presenter?.presentSelectedGist(response: .init(url: selectedGist.url ?? ""))
     }
     
 }

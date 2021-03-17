@@ -12,6 +12,7 @@ import UIKit
 protocol GistDetailPresentationLogic: class {
     func presentGistDetail(response: GistDetail.FetchDetail.Response)
     func presentUpdateFavorite(response: GistDetail.UpdateFavorite.Response)
+    func presentSelectedGist(response: GistDetail.OpenSelectedGist.Response)
 }
 
 final class GistDetailPresenter: GistDetailPresentationLogic {
@@ -39,6 +40,10 @@ final class GistDetailPresenter: GistDetailPresentationLogic {
             viewModel = .init(image: UIImage(imageLiteralResourceName: "unheart"))
         }
         viewController?.displayFavoriteUpdate(viewModel: viewModel)
+    }
+    
+    func presentSelectedGist(response: GistDetail.OpenSelectedGist.Response) {
+        viewController?.displaySelectedGist(viewModel: .init(url: response.url))
     }
     
 }

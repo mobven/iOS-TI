@@ -24,6 +24,17 @@ enum GistDetail {
         }
     }
     
+    enum OpenSelectedGist {
+        struct Request {
+        }
+        struct Response {
+            let url: String
+        }
+        struct ViewModel {
+            let url: String
+        }
+    }
+    
     enum FetchDetail {
         struct Request {
             

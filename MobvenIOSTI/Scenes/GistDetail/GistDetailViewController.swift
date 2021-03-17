@@ -8,10 +8,13 @@
 
 import UIKit
 import SDWebImage
+import SafariServices
+
 
 protocol GistDetailDisplayLogic: class {
     func displayGistDetail(viewModel: GistDetail.FetchDetail.ViewModel)
     func displayFavoriteUpdate(viewModel: GistDetail.UpdateFavorite.ViewModel)
+    func displaySelectedGist(viewModel: GistDetail.OpenSelectedGist.ViewModel)
 }
 
 final class GistDetailViewController: UIViewController {
@@ -67,12 +70,17 @@ final class GistDetailViewController: UIViewController {
     }
     
     @IBAction func selectURL() {
+        interactor?.openURL(request: .init())
         // FIXME: route to gist url showing SFSafariViewController.
     }
     
 }
 
 extension GistDetailViewController: GistDetailDisplayLogic {
+    func displaySelectedGist(viewModel: GistDetail.OpenSelectedGist.ViewModel) {
+        router?.routeToSafari(url: viewModel.url)
+    }
+    
     
     func displayGistDetail(viewModel: GistDetail.FetchDetail.ViewModel) {
         imageView.sd_setImage(with: URL(string: viewModel.imageURL))
