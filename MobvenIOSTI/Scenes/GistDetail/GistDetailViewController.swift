@@ -18,6 +18,7 @@ final class GistDetailViewController: UIViewController {
     
     var interactor: GistDetailBusinessLogic?
     var router: (GistDetailRoutingLogic & GistDetailDataPassing)?
+    var parentNavigationController: UINavigationController?
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var idLabel: UILabel!
@@ -67,9 +68,10 @@ final class GistDetailViewController: UIViewController {
     }
     
     @IBAction func selectURL() {
-        // FIXME: route to gist url showing SFSafariViewController.
+        let controller: SFSafariViewController = storyboard!.instantiateViewController()
+        controller.targetUrl = urlButton.titleLabel?.text ?? ""
+        parentNavigationController?.pushViewController(controller, animated: true)
     }
-    
 }
 
 extension GistDetailViewController: GistDetailDisplayLogic {

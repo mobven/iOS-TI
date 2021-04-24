@@ -19,6 +19,7 @@ final class GistsViewController: UIViewController {
     
     var interactor: GistsBusinessLogic?
     var router: (GistsRoutingLogic & GistsDataPassing)?
+    var cellAtt = 0
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -49,6 +50,9 @@ final class GistsViewController: UIViewController {
         presenter.viewController = viewController
         router.viewController = viewController
         router.dataStore = interactor
+//        tableView.rowHeight = UITableView.automaticDimension
+//        tableView.estimatedRowHeight = 100
+    
     }
     
     override func viewDidLoad() {
@@ -87,6 +91,7 @@ extension GistsViewController: UITableViewDataSource, UITableViewDelegate {
         ) as? GistTableViewCell else {
             fatalError("Could not find cell")
         }
+        cellAtt = cell.count
         cell.set(gist: gists[indexPath.row])
         return cell
     }
@@ -98,7 +103,8 @@ extension GistsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        100
+       // return CGFloat(cellAtt * 20)
+        return cellAtt < 4 ? 120 : 150
     }
     
 }
