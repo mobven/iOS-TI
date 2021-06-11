@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nxe-uw-h5I">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nxe-uw-h5I">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -46,6 +46,9 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6S7-3A-Jod">
                                         <rect key="frame" x="0.0" y="545.5" width="404" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="3ri-fL-rKR"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="selectURL" destination="nxe-uw-h5I" eventType="touchUpInside" id="yqn-Tp-7U3"/>
@@ -62,6 +65,28 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="ibW-Uf-eLE" firstAttribute="top" secondItem="tE3-2W-GqF" secondAttribute="bottom" constant="20" id="2qc-tK-kK4"/>
+                                    <constraint firstItem="kmr-7p-uQ0" firstAttribute="leading" secondItem="KIY-2K-QlB" secondAttribute="leading" id="6dJ-nf-8vm"/>
+                                    <constraint firstAttribute="trailing" secondItem="kmr-7p-uQ0" secondAttribute="trailing" id="D5A-rq-68v"/>
+                                    <constraint firstItem="ibW-Uf-eLE" firstAttribute="leading" secondItem="KIY-2K-QlB" secondAttribute="leading" id="KmH-cV-Jks"/>
+                                    <constraint firstItem="xd2-o1-DEB" firstAttribute="top" secondItem="tG4-PZ-vue" secondAttribute="bottom" constant="20" id="NZd-Ml-MAb"/>
+                                    <constraint firstItem="uHN-AS-juZ" firstAttribute="top" secondItem="kmr-7p-uQ0" secondAttribute="bottom" constant="20" id="Qm3-xS-tHu"/>
+                                    <constraint firstAttribute="trailing" secondItem="tG4-PZ-vue" secondAttribute="trailing" id="Tjf-B2-9U4"/>
+                                    <constraint firstItem="tG4-PZ-vue" firstAttribute="top" secondItem="ibW-Uf-eLE" secondAttribute="bottom" constant="20" id="Xeb-Ot-Cix"/>
+                                    <constraint firstAttribute="trailing" secondItem="6S7-3A-Jod" secondAttribute="trailing" id="a8f-9M-0JS"/>
+                                    <constraint firstItem="tG4-PZ-vue" firstAttribute="leading" secondItem="KIY-2K-QlB" secondAttribute="leading" id="d0c-1s-yJJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ibW-Uf-eLE" secondAttribute="trailing" id="d0n-ff-Nsc"/>
+                                    <constraint firstItem="6S7-3A-Jod" firstAttribute="top" secondItem="xd2-o1-DEB" secondAttribute="bottom" constant="20" id="f3W-K4-0k5"/>
+                                    <constraint firstItem="xd2-o1-DEB" firstAttribute="leading" secondItem="KIY-2K-QlB" secondAttribute="leading" id="hmG-6a-Nkp"/>
+                                    <constraint firstItem="tE3-2W-GqF" firstAttribute="width" secondItem="KIY-2K-QlB" secondAttribute="width" id="iKN-Xn-Pml"/>
+                                    <constraint firstItem="kmr-7p-uQ0" firstAttribute="top" secondItem="6S7-3A-Jod" secondAttribute="bottom" constant="20" id="klg-Sc-PcR"/>
+                                    <constraint firstAttribute="bottom" secondItem="uHN-AS-juZ" secondAttribute="bottom" id="lx2-Q9-pJY"/>
+                                    <constraint firstItem="uHN-AS-juZ" firstAttribute="leading" secondItem="KIY-2K-QlB" secondAttribute="leading" id="nhU-nw-g78"/>
+                                    <constraint firstItem="6S7-3A-Jod" firstAttribute="leading" secondItem="KIY-2K-QlB" secondAttribute="leading" id="oFh-YR-5Xa"/>
+                                    <constraint firstAttribute="trailing" secondItem="xd2-o1-DEB" secondAttribute="trailing" id="uBh-Hr-Ijj"/>
+                                    <constraint firstAttribute="trailing" secondItem="uHN-AS-juZ" secondAttribute="trailing" id="zDB-Pa-p8p"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="acR-sl-ate"/>
