@@ -96,11 +96,6 @@ extension GistsViewController: UITableViewDataSource, UITableViewDelegate {
             request: Gists.ShowDetail.Request(index: indexPath.row)
         )
     }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        100
-    }
-    
 }
 
 extension GistsViewController: GistDetailFavoriteDelegate {
