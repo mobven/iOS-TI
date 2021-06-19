@@ -37,8 +37,8 @@ class GistsInteractor: GistsBusinessLogic, GistsDataStore {
                     
                     self?.gists = result
                     self?.presenter?.presentGists(response: Gists.Fetch.Response(gists: result))
-                } catch {
-                    print("Error occured")
+                } catch let error {
+                    print("Error occured: \(error.localizedDescription)")
                 }
                 
             case .failure(let error):
