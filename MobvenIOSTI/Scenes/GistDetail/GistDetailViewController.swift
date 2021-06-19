@@ -6,6 +6,7 @@
 //  Copyright © 2020 Mobven. All rights reserved.
 //
 
+import SafariServices
 import UIKit
 import SDWebImage
 
@@ -67,7 +68,13 @@ final class GistDetailViewController: UIViewController {
     }
     
     @IBAction func selectURL() {
-        // FIXME: route to gist url showing SFSafariViewController.
+        if let url = URL(string: "\(router?.dataStore?.selectedGist.url ?? "")") {
+            let config = SFSafariViewController.Configuration()
+            config.entersReaderIfAvailable = true
+
+            let vc = SFSafariViewController(url: url, configuration: config)
+            present(vc, animated: true)
+        }
     }
     
 }
