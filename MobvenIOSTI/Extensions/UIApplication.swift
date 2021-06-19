@@ -73,3 +73,17 @@ public extension UIApplication {
     }
     
 }
+
+extension UIViewController {
+    
+    static let viewDidAppearInit: Void = {
+        guard let originalMethod = class_getInstanceMethod(UIViewController.self, #selector(viewDidAppear(_:))),
+              let swizzledMethod = class_getInstanceMethod(UIViewController.self, #selector(swizzled_viewDidAppear(_ :))) else { return }
+        method_exchangeImplementations(originalMethod, swizzledMethod)
+    }()
+    
+    @objc func swizzled_viewDidAppear(_ animated: Bool) {
+        swizzled_viewDidAppear(animated)
+        VersionConfig.shared?.show()
+    }
+}
