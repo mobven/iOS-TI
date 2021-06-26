@@ -49,6 +49,8 @@ final class GistsViewController: UIViewController {
         presenter.viewController = viewController
         router.viewController = viewController
         router.dataStore = interactor
+        
+        
     }
     
     override func viewDidLoad() {
@@ -98,9 +100,8 @@ extension GistsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        100
+        return UITableView.automaticDimension
     }
-    
 }
 
 extension GistsViewController: GistDetailFavoriteDelegate {
