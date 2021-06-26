@@ -8,11 +8,11 @@
 
 import Foundation
 
-protocol GistDetailRoutingLogic: class {
+protocol GistDetailRoutingLogic: AnyObject {
     func updateFavoriteRouting()
 }
 
-protocol GistDetailDataPassing: class {
+protocol GistDetailDataPassing: AnyObject {
     var dataStore: GistDetailDataStore? { get }
     var delegate : GistDetailFavoriteDelegate? { get set }
 }

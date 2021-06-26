@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol GistDetailPresentationLogic: class {
+protocol GistDetailPresentationLogic: AnyObject {
     func presentGistDetail(response: GistDetail.FetchDetail.Response)
     func presentUpdateFavorite(response: GistDetail.UpdateFavorite.Response)
 }

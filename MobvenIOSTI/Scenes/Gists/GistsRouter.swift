@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-protocol GistsRoutingLogic: class {
+protocol GistsRoutingLogic: AnyObject {
     func routeToGistDetails(delegate: GistDetailFavoriteDelegate)
 }
 
-protocol GistsDataPassing: class {
+protocol GistsDataPassing: AnyObject {
     var dataStore: GistsDataStore? { get }
 }
 

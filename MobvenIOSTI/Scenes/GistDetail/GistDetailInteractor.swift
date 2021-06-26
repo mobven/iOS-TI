@@ -8,12 +8,12 @@
 
 import Foundation
 
-protocol GistDetailBusinessLogic: class {
+protocol GistDetailBusinessLogic: AnyObject {
     func fetchGistDetail(request: GistDetail.FetchDetail.Request)
     func updateFavorite(request: GistDetail.UpdateFavorite.Request)
 }
 
-protocol GistDetailDataStore: class {
+protocol GistDetailDataStore: AnyObject {
     var selectedGist: Gist! { get set }
 }
 

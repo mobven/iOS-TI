@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol GistsPresentationLogic: class {
+protocol GistsPresentationLogic: AnyObject {
     func presentGists(response: Gists.Fetch.Response)
     func presentShowDetail(response: Gists.ShowDetail.Response)
 }
