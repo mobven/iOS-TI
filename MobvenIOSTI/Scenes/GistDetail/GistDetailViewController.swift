@@ -9,7 +9,7 @@
 import UIKit
 import SDWebImage
 
-protocol GistDetailDisplayLogic: class {
+protocol GistDetailDisplayLogic: AnyObject {
     func displayGistDetail(viewModel: GistDetail.FetchDetail.ViewModel)
     func displayFavoriteUpdate(viewModel: GistDetail.UpdateFavorite.ViewModel)
 }
