@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,9 +30,12 @@
 		6581F130250A0E4B008CBAFA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F12F250A0E4B008CBAFA /* API.swift */; };
 		6DA088AC2517E905003C9A20 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088AB2517E905003C9A20 /* UIApplication.swift */; };
 		6DA088B92517FD6A003C9A20 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088B82517FD6A003C9A20 /* String.swift */; };
+		762D10C42689CFAF008E399F /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 762D10C32689CFAF008E399F /* Config.xcconfig */; };
+		8EA3114549B88D980F6D0C9D /* Pods_MobvenIOSTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8CBAAFC3BF40EA0ACA41AD6 /* Pods_MobvenIOSTI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A783A68114CE7052C9164BE /* Pods-MobvenIOSTI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobvenIOSTI.debug.xcconfig"; path = "Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI.debug.xcconfig"; sourceTree = "<group>"; };
 		6581F0E62508CB55008CBAFA /* MobvenIOSTI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobvenIOSTI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6581F0E92508CB55008CBAFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6581F0F22508CB5A008CBAFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,8 +59,11 @@
 		6581F123250913B9008CBAFA /* VersionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionConfig.swift; sourceTree = "<group>"; };
 		6581F12525091422008CBAFA /* Gist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gist.swift; sourceTree = "<group>"; };
 		6581F12F250A0E4B008CBAFA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		6B6AE35A2D39DDA1DE359C6C /* Pods-MobvenIOSTI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobvenIOSTI.release.xcconfig"; path = "Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI.release.xcconfig"; sourceTree = "<group>"; };
 		6DA088AB2517E905003C9A20 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		6DA088B82517FD6A003C9A20 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		762D10C32689CFAF008E399F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		A8CBAAFC3BF40EA0ACA41AD6 /* Pods_MobvenIOSTI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobvenIOSTI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +71,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA3114549B88D980F6D0C9D /* Pods_MobvenIOSTI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C9FE6C789818C51A760E455 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8CBAAFC3BF40EA0ACA41AD6 /* Pods_MobvenIOSTI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		65811167250A6E42008CBAFA /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,8 +97,11 @@
 		6581F0DD2508CB55008CBAFA = {
 			isa = PBXGroup;
 			children = (
+				762D10C32689CFAF008E399F /* Config.xcconfig */,
 				6581F0E82508CB55008CBAFA /* MobvenIOSTI */,
 				6581F0E72508CB55008CBAFA /* Products */,
+				939B4C1BCF616BE1461C8AFB /* Pods */,
+				2C9FE6C789818C51A760E455 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +192,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		939B4C1BCF616BE1461C8AFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A783A68114CE7052C9164BE /* Pods-MobvenIOSTI.debug.xcconfig */,
+				6B6AE35A2D39DDA1DE359C6C /* Pods-MobvenIOSTI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,17 +208,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6581F0FA2508CB5A008CBAFA /* Build configuration list for PBXNativeTarget "MobvenIOSTI" */;
 			buildPhases = (
+				DDB63A718AD582807F199C3B /* [CP] Check Pods Manifest.lock */,
 				6581F0E22508CB55008CBAFA /* Sources */,
 				6581F0E32508CB55008CBAFA /* Frameworks */,
 				6581F0E42508CB55008CBAFA /* Resources */,
+				16810183A9080DE29792DFE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MobvenIOSTI;
-			packageProductDependencies = (
-			);
 			productName = versionApp;
 			productReference = 6581F0E62508CB55008CBAFA /* MobvenIOSTI.app */;
 			productType = "com.apple.product-type.application";
@@ -220,8 +247,6 @@
 				Base,
 			);
 			mainGroup = 6581F0DD2508CB55008CBAFA;
-			packageReferences = (
-			);
 			productRefGroup = 6581F0E72508CB55008CBAFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -237,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6581F0F62508CB5A008CBAFA /* LaunchScreen.storyboard in Resources */,
+				762D10C42689CFAF008E399F /* Config.xcconfig in Resources */,
 				6581F1162508CBDA008CBAFA /* GistDetail.storyboard in Resources */,
 				6581F1082508CBBB008CBAFA /* Gists.storyboard in Resources */,
 				6581F0F32508CB5A008CBAFA /* Assets.xcassets in Resources */,
@@ -244,6 +270,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16810183A9080DE29792DFE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDB63A718AD582807F199C3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobvenIOSTI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6581F0E22508CB55008CBAFA /* Sources */ = {
@@ -288,6 +356,7 @@
 /* Begin XCBuildConfiguration section */
 		6581F0F82508CB5A008CBAFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762D10C32689CFAF008E399F /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -348,6 +417,7 @@
 		};
 		6581F0F92508CB5A008CBAFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762D10C32689CFAF008E399F /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -402,6 +472,7 @@
 		};
 		6581F0FB2508CB5A008CBAFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A783A68114CE7052C9164BE /* Pods-MobvenIOSTI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -422,6 +493,7 @@
 		};
 		6581F0FC2508CB5A008CBAFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6AE35A2D39DDA1DE359C6C /* Pods-MobvenIOSTI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

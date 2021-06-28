@@ -21,26 +21,34 @@ final class VersionConfig {
         return instance
     }
     
-    private var versionLabel: UILabel
+    private var versionLabel: UILabel?
     
     private init?() {
         
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"]
         let build = Bundle.main.infoDictionary?["CFBundleVersion"]
         
-        versionLabel = UILabel()
+        #if DEBUG
+        let versionLabel = UILabel()
         versionLabel.frame = CGRect(x: 0, y: 40, width: 250, height: 30)
         versionLabel.text = " v.\(version ?? "N/A")(\(build ?? "N/A")) "
         versionLabel.backgroundColor = UIColor.black.withAlphaComponent(0.4)
         versionLabel.textColor = UIColor.white
         versionLabel.font = UIFont.boldSystemFont(ofSize: 16)
         versionLabel.sizeToFit()
+        
+        self.versionLabel = versionLabel
+        
+
         UIApplication.shared.delegate?.window??.addSubview(versionLabel)
+        
+        #endif
     }
     
     /// Brings already created version label to the front of the current window.
     func show() {
-        UIApplication.shared.delegate?.window??.bringSubviewToFront(self.versionLabel)
+        guard let versionLabel = versionLabel else { return }
+        UIApplication.shared.delegate?.window??.bringSubviewToFront(versionLabel)
     }
     
 }

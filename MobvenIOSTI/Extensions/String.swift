@@ -15,7 +15,7 @@ extension String {
         dateFormatter.dateFormat = "yyyy-MM-dd'T'hh:mm:ss'Z'"
         guard let date = dateFormatter.date(from: self) else { return nil }
         
-        dateFormatter.dateFormat = format
+        dateFormatter.dateFormat = "MM-dd-yyyy"
         return dateFormatter.string(from: date)
     }
     
