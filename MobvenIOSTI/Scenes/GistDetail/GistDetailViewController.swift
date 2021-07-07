@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+import SafariServices
 
 protocol GistDetailDisplayLogic: class {
     func displayGistDetail(viewModel: GistDetail.FetchDetail.ViewModel)
@@ -19,6 +20,8 @@ final class GistDetailViewController: UIViewController {
     var interactor: GistDetailBusinessLogic?
     var router: (GistDetailRoutingLogic & GistDetailDataPassing)?
     
+    private var urlToSafariServices: String?
+
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var idLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -67,7 +70,11 @@ final class GistDetailViewController: UIViewController {
     }
     
     @IBAction func selectURL() {
-        // FIXME: route to gist url showing SFSafariViewController.
+        if let url = URL(string: urlToSafariServices ?? "") {
+            let safariVC = SFSafariViewController(url: url)
+            safariVC.modalPresentationStyle = .fullScreen
+            self.present(safariVC, animated: true, completion: nil)
+        }
     }
     
 }
@@ -81,6 +88,7 @@ extension GistDetailViewController: GistDetailDisplayLogic {
         dateLabel.text = viewModel.date
         descriptionLabel.text = viewModel.description
         commentsLabel.text = viewModel.comments
+        urlToSafariServices = viewModel.url
     }
     
     func displayFavoriteUpdate(viewModel: GistDetail.UpdateFavorite.ViewModel) {
