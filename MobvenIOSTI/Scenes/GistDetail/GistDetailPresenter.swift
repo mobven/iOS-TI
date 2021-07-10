@@ -25,7 +25,7 @@ final class GistDetailPresenter: GistDetailPresentationLogic {
                 imageURL: response.gist.avatarUrl ?? "",
                 id: "Identifier:\n\(response.gist.id ?? "")",
                 url: response.gist.url,
-                date: "Created At:\n\(response.gist.createdAt?.formatDate(with: "MMM-yyyy") ?? "")",
+                date: "Created At:\n\(response.gist.createdAt?.formatDate(with: "MMM yyyy") ?? "")",
                 description: "Description\n\(response.gist.description ?? "")",
                 comments: "Comments:\n\(comments)")
         )
