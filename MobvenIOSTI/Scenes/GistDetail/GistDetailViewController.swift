@@ -67,7 +67,12 @@ final class GistDetailViewController: UIViewController {
     }
     
     @IBAction func selectURL() {
-        // FIXME: route to gist url showing SFSafariViewController.
+        guard let url = URL(string: urlButton.titleLabel?.text ?? "") else {
+            print("Invalid url")
+            return
+        }
+        
+        presentSafariViewController(with: url)
     }
     
 }
