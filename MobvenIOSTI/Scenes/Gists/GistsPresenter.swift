@@ -22,8 +22,9 @@ final class GistsPresenter: GistsPresentationLogic {
             Gists.Fetch.ViewModel.Gist(id: $0.id,
                                        description: $0.description,
                                        date: $0.createdAt?.formatDate(with: "MMM-yyyy"),
-                                       comments: "\($0.comments ?? 0) comments")
+                                       comments: $0.comments ?? 0)
         })
+       
         viewController?.displayGists(
             viewModel: Gists.Fetch.ViewModel(
                 gists: gists

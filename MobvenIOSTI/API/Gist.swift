@@ -13,11 +13,11 @@ struct Gist: Decodable {
     var url: String?
     var description: String?
     var createdAt: String?
-    var nodeId: Int?
+    var nodeId: String?
     var comments: Int?
     
     var isFavorite: Bool = false
-    
+
     private var owner: Owner?
     var avatarUrl: String? {
         return owner?.avatarUrl

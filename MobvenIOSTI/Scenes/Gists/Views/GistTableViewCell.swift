@@ -21,7 +21,7 @@ class GistTableViewCell: UITableViewCell {
         idLabel.text = gist.id
         descriptionLabel.text = gist.description
         dateLabel.text = gist.date
-        commentsLabel.text = gist.comments
+        commentsLabel.text = "\(gist.comments)"
         favoriteButton.isHidden = !gist.isFavorite
     }
     

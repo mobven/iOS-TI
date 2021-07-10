@@ -29,7 +29,7 @@ enum Gists {
                 var id: String?
                 var description: String?
                 var date: String?
-                var comments: String?
+                var comments: Int
                 var isFavorite: Bool = false
             }
             
