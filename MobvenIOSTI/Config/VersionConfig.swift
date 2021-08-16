@@ -40,7 +40,10 @@ final class VersionConfig {
     
     /// Brings already created version label to the front of the current window.
     func show() {
-        UIApplication.shared.delegate?.window??.bringSubviewToFront(self.versionLabel)
+        let shouldShow = Bundle.main.infoDictionary?["SHOW VERSION"] as? String
+        if shouldShow == "true"{
+            UIApplication.shared.delegate?.window??.bringSubviewToFront(self.versionLabel)
+        }
     }
     
 }
