@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Extension
 
 protocol GistsRoutingLogic: class {
     func routeToGistDetails(delegate: GistDetailFavoriteDelegate)
