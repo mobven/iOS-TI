@@ -28,7 +28,7 @@ class GistTableViewCell: UITableViewCell {
         favoriteButton.isHidden = !gist.isFavorite
         
         print(gist.description)
-        if gist.description == nil || gist.description == "" {
+        if gist.description == nil || gist.description?.count == 0 {
             desciptionLabelHeight.constant = 0
         }
     }

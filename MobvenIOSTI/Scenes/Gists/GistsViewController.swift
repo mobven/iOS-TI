@@ -98,7 +98,7 @@ extension GistsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let height: CGFloat = (gists[indexPath.row].description == nil || gists[indexPath.row].description == "" ) ? 80 : 100
+        let height: CGFloat = (gists[indexPath.row].description == nil || gists[indexPath.row].description?.count == 0 ) ? 80 : 100
         return height
     }
     

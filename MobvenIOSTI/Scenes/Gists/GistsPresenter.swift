@@ -19,7 +19,8 @@ final class GistsPresenter: GistsPresentationLogic {
     
     func presentGists(response: Gists.Fetch.Response) {
         let gists: [Gists.Fetch.ViewModel.Gist] = response.gists.map({
-            Gists.Fetch.ViewModel.Gist(id: $0.id,
+            print($0.createdAt)
+            return Gists.Fetch.ViewModel.Gist(id: $0.id,
                                        description: $0.description,
                                        date: $0.createdAt?.formatDate(with: "MMM-yyyy"),
                                        comments: "\($0.comments ?? 0) comments")
