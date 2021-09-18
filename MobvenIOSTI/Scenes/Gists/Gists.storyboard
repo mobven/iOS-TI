@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qnS-g7-IHP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qnS-g7-IHP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GistTableViewCell" rowHeight="110" id="vnx-Mh-saV" customClass="GistTableViewCell" customModule="MobvenIOSTI" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="110"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vnx-Mh-saV" id="xuI-pU-NUk">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
@@ -94,6 +94,7 @@
                                         <connections>
                                             <outlet property="commentsLabel" destination="Mk9-EN-3G8" id="5cF-Ek-FEo"/>
                                             <outlet property="dateLabel" destination="JH3-RD-tzN" id="pUN-WK-2Eb"/>
+                                            <outlet property="desciptionLabelHeight" destination="5H4-TT-SNl" id="DGI-tC-rz8"/>
                                             <outlet property="descriptionLabel" destination="daw-1m-gP2" id="ht0-Fb-gNt"/>
                                             <outlet property="favoriteButton" destination="IwZ-JG-Dai" id="9IE-WT-HZj"/>
                                             <outlet property="idLabel" destination="9bL-6K-o7m" id="ofB-gH-DUL"/>

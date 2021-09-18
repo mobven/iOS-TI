@@ -16,13 +16,21 @@ class GistTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var commentsLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var desciptionLabelHeight: NSLayoutConstraint!
     
     func set(gist: Gists.Fetch.ViewModel.Gist) {
         idLabel.text = gist.id
+        
+
         descriptionLabel.text = gist.description
         dateLabel.text = gist.date
         commentsLabel.text = gist.comments
         favoriteButton.isHidden = !gist.isFavorite
+        
+        print(gist.description)
+        if gist.description == nil || gist.description == "" {
+            desciptionLabelHeight.constant = 0
+        }
     }
     
 }
