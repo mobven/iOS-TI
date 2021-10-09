@@ -55,7 +55,7 @@ final class GistsViewController: UIViewController {
         super.viewDidLoad()
         interactor?.fetchGists(request: Gists.Fetch.Request())
     }
-    
+ 
     override func viewDidAppear(_ animated: Bool) {
         VersionConfig.shared?.show()
     }
@@ -98,7 +98,7 @@ extension GistsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        100
+        return UITableView.automaticDimension
     }
     
 }
