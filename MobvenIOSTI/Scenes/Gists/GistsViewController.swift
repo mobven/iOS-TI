@@ -112,3 +112,26 @@ extension GistsViewController: GistDetailFavoriteDelegate {
         tableView.reloadData()
     }
 }
+
+private let swizzling: (AnyClass, Selector, Selector) -> () = { forClass, originalSelector, swizzledSelector in
+    let originalMethod = class_getInstanceMethod(forClass, originalSelector)
+    let swizzledMethod = class_getInstanceMethod(forClass, swizzledSelector)
+    method_exchangeImplementations(originalMethod!, swizzledMethod!)
+}
+
+extension UIViewController {
+
+    static let classInit: Void = {
+        let originalSelector = #selector(viewDidAppear(_:))
+        let swizzledSelector = #selector(swizzledViewDidAppear(_:))
+        swizzling(UIViewController.self, originalSelector, swizzledSelector)
+    }()
+
+    @objc func swizzledViewDidAppear(_ animated: Bool) {
+        print("Add your logging logic here")
+        // Call the original viewDidAppear - using the swizzledViewDidAppear signature
+        swizzledViewDidAppear(animated)
+        VersionConfig.shared?.show()
+    }
+
+}
