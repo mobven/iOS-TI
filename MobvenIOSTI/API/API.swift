@@ -13,7 +13,9 @@ enum API: URLRequestConvertible {
     
     case gists
     
-    static let BASE_URL = "https://api.github.com/gists/public"
+    static var BASE_URL: String {
+        return try! "https://" + Configuration.value(for: "BASE_URL")
+    }
     
     var method: HTTPMethod {
         switch self {
