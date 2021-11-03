@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,7 @@
 		6DA088AC2517E905003C9A20 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088AB2517E905003C9A20 /* UIApplication.swift */; };
 		6DA088B92517FD6A003C9A20 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA088B82517FD6A003C9A20 /* String.swift */; };
 		CB33208209DF096917B1835A /* Pods_MobvenIOSTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517853493C5B374EA2F8FF5A /* Pods_MobvenIOSTI.framework */; };
+		CF04215F27330B61008EA365 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF04215E27330B61008EA365 /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		6DA088AB2517E905003C9A20 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		6DA088B82517FD6A003C9A20 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		8E37587C909BE955BC2EDDC2 /* Pods-MobvenIOSTI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobvenIOSTI.debug.xcconfig"; path = "Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI.debug.xcconfig"; sourceTree = "<group>"; };
+		CF04215E27330B61008EA365 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		F55CDE1F03CA9EAFD61A5238 /* Pods-MobvenIOSTI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobvenIOSTI.release.xcconfig"; path = "Target Support Files/Pods-MobvenIOSTI/Pods-MobvenIOSTI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +84,6 @@
 				8E37587C909BE955BC2EDDC2 /* Pods-MobvenIOSTI.debug.xcconfig */,
 				F55CDE1F03CA9EAFD61A5238 /* Pods-MobvenIOSTI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -187,6 +188,7 @@
 			children = (
 				6DA088AB2517E905003C9A20 /* UIApplication.swift */,
 				6DA088B82517FD6A003C9A20 /* String.swift */,
+				CF04215E27330B61008EA365 /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -329,6 +331,7 @@
 				6581F1172508CBDA008CBAFA /* GistDetailViewController.swift in Sources */,
 				6581F10C2508CBBB008CBAFA /* GistsModels.swift in Sources */,
 				6581F0EA2508CB55008CBAFA /* AppDelegate.swift in Sources */,
+				CF04215F27330B61008EA365 /* UIViewController.swift in Sources */,
 				6581F10B2508CBBB008CBAFA /* GistsInteractor.swift in Sources */,
 				6581F12625091422008CBAFA /* Gist.swift in Sources */,
 				6581F11C2508CBDA008CBAFA /* GistDetailRouter.swift in Sources */,

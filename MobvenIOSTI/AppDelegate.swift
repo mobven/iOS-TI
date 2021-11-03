@@ -19,5 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    override init() {
+        super.init()
+        UIViewController.classInit
+    }
+    
 }
 
