@@ -13,6 +13,7 @@ final class GistsWorker {
     
     func getGists(completionHandler: @escaping ((_ result: Result<Any,AFError>) -> Void)) {
         AF.request(API.gists).validate().responseJSON { (response) in
+            print(response)
             switch response.result {
             case .success(_ ):
                 completionHandler(response.result)
