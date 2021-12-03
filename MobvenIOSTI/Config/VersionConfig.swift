@@ -41,6 +41,8 @@ final class VersionConfig {
     /// Brings already created version label to the front of the current window.
     func show() {
         UIApplication.shared.delegate?.window??.bringSubviewToFront(self.versionLabel)
+        versionLabel.layer.zPosition = CGFloat(Float.greatestFiniteMagnitude)
+
     }
     
 }
