@@ -13,7 +13,12 @@ enum API: URLRequestConvertible {
     
     case gists
     
-    static let BASE_URL = "https://api.github.com/gists/public"
+    static let BASE_URL: String = {
+        guard let rootURLstring = Environment.infoDictionary["API_URL"] as? String else {
+            fatalError("Root URL fail")
+        }
+        return rootURLstring
+    }()
     
     var method: HTTPMethod {
         switch self {
@@ -31,4 +36,15 @@ enum API: URLRequestConvertible {
         return urlRequest
     }
     
+}
+
+
+public enum Environment {
+    
+  static let infoDictionary: [String: Any] = {
+    guard let dict = Bundle.main.infoDictionary else {
+      fatalError("Plist file not found")
+    }
+    return dict
+  }()
 }
