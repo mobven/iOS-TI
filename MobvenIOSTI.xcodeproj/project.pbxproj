@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52AE9D50275B85E30085EF76 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AE9D4F275B85E30085EF76 /* UIViewController.swift */; };
 		6581F0EA2508CB55008CBAFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581F0E92508CB55008CBAFA /* AppDelegate.swift */; };
 		6581F0F32508CB5A008CBAFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6581F0F22508CB5A008CBAFA /* Assets.xcassets */; };
 		6581F0F62508CB5A008CBAFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6581F0F42508CB5A008CBAFA /* LaunchScreen.storyboard */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		2562291D24DF3719C968B70B /* Pods_MobvenIOSTI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobvenIOSTI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52AE9D4F275B85E30085EF76 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		6581F0E62508CB55008CBAFA /* MobvenIOSTI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobvenIOSTI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6581F0E92508CB55008CBAFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6581F0F22508CB5A008CBAFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			children = (
 				6DA088AB2517E905003C9A20 /* UIApplication.swift */,
 				6DA088B82517FD6A003C9A20 /* String.swift */,
+				52AE9D4F275B85E30085EF76 /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				6581F1172508CBDA008CBAFA /* GistDetailViewController.swift in Sources */,
 				6581F10C2508CBBB008CBAFA /* GistsModels.swift in Sources */,
 				6581F0EA2508CB55008CBAFA /* AppDelegate.swift in Sources */,
+				52AE9D50275B85E30085EF76 /* UIViewController.swift in Sources */,
 				6581F10B2508CBBB008CBAFA /* GistsInteractor.swift in Sources */,
 				6581F12625091422008CBAFA /* Gist.swift in Sources */,
 				6581F11C2508CBDA008CBAFA /* GistDetailRouter.swift in Sources */,
