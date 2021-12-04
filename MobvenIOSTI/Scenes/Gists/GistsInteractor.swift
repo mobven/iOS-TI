@@ -32,11 +32,14 @@ class GistsInteractor: GistsBusinessLogic, GistsDataStore {
             switch result {
             case .success(let gists):
                 do {
-                    let data = try JSONSerialization.data(withJSONObject: gists, options: .prettyPrinted)
-                    let result = try JSONDecoder().decode([Gist].self, from: data)
                     
-                    self?.gists = result
-                    self?.presenter?.presentGists(response: Gists.Fetch.Response(gists: result))
+                    let data = try JSONSerialization.data(withJSONObject: gists, options: .sortedKeys)
+                    let dataString = String.init(data: data, encoding: .utf8)!
+                    print(dataString)
+                    let gistList = try! JSONDecoder().decode([Gist].self, from: data)
+                    print(gistList)
+                    self?.gists = gistList
+                    self?.presenter?.presentGists(response: Gists.Fetch.Response(gists: gistList))
                 } catch {
                     print("Error occured")
                 }
