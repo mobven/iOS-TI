@@ -7,15 +7,18 @@
 //
 
 import Foundation
+import SafariServices
 
 protocol GistDetailRoutingLogic: class {
     func updateFavoriteRouting()
+    func openWebView()
 }
 
 protocol GistDetailDataPassing: class {
     var dataStore: GistDetailDataStore? { get }
     var delegate : GistDetailFavoriteDelegate? { get set }
 }
+
 
 final class GistDetailRouter: GistDetailRoutingLogic, GistDetailDataPassing {
     
@@ -29,4 +32,15 @@ final class GistDetailRouter: GistDetailRoutingLogic, GistDetailDataPassing {
         delegate?.gistDetailFavoriteUpdatedGist(gist)
     }
     
+    func openWebView() {
+        if let url = URL(string: dataStore?.selectedGist.url ?? "") {
+                let config = SFSafariViewController.Configuration()
+                config.entersReaderIfAvailable = true
+                let vc = SFSafariViewController(url: url, configuration: config)
+                viewController?.present(vc, animated: true)
+            }
+    }
+    
 }
+
+
