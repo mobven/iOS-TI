@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol GistDetailPresentationLogic: class {
+protocol GistDetailPresentationLogic: AnyObject {
     func presentGistDetail(response: GistDetail.FetchDetail.Response)
     func presentUpdateFavorite(response: GistDetail.UpdateFavorite.Response)
 }
@@ -25,7 +25,7 @@ final class GistDetailPresenter: GistDetailPresentationLogic {
                 imageURL: response.gist.avatarUrl ?? "",
                 id: "Identifier:\n\(response.gist.id ?? "")",
                 url: response.gist.url,
-                date: "Created At:\n\(response.gist.createdAt?.formatDate(with: "MMM-yyyy") ?? "")",
+                date: "Created At:\n\(response.gist.createdAt?.formatDate(with: "dd MMM yy") ?? "")",
                 description: "Description\n\(response.gist.description ?? "")",
                 comments: "Comments:\n\(comments)")
         )

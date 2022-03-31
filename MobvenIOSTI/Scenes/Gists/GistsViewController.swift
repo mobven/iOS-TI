@@ -10,7 +10,7 @@ import UIKit
 
 import UIKit
 
-protocol GistsDisplayLogic: class {
+protocol GistsDisplayLogic: AnyObject {
     func displayGists(viewModel: Gists.Fetch.ViewModel)
     func displayShowDetail(viewModel: Gists.ShowDetail.ViewModel)
 }
